@@ -37,5 +37,8 @@ Movimentos(*idMovimento*, montante, data, *IdTipoMovimento* -> Movimentos, idcon
 
 CLASSES
 
+Clube(*idClube*, Nome ,Fundaçãao ,Localidade);
+Equipa(*IdEquipa*, Genero, faixa etaria, IdClube->Clube);
+Jogador(*idJogador*, Idclube -> Clube, idEquipa -> Equipa, Idade, Nome, Número)
 Evento(*idEvento*, Minuto, idjogo -> Jogo, idJogador -> Jogador, TipodeEvento_Descrição);
 Substituição(*IdEvento* -> Evento, IdjgEntra -> Jogador);
