@@ -31,3 +31,11 @@ titular(*idConta* -> conta, *idCliente* -> Cliente, titularidade);
 Movimentos(*idMovimento*, montante, data, *IdTipoMovimento* -> Movimentos, idcontaorigem -> Conta, idcontadestino -> Conta);
 
 
+
+
+6-
+
+CLASSES
+
+Evento(*idEvento*, Minuto, idjogo -> Jogo, idJogador -> Jogador, TipodeEvento_Descrição);
+Substituição(*IdEvento* -> Evento, IdjgEntra -> Jogador);
